@@ -70,6 +70,10 @@ const Navbar = ({
       title: "About",
       url: "/about",
     },
+    {
+      title: "Dashboard",
+      url: "/dashboard",
+    },
   ],
   auth = {
     login: { title: "Login", url: "/auth/login" },
