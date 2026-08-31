@@ -16,7 +16,6 @@ import {
 import React from "react";
 
 export default function DashboardLayout({
-
   admin ,
   user
 }: {
