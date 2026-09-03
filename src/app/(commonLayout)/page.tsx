@@ -2,17 +2,7 @@ import { Button } from "@/components/ui/button";
 import { authClient } from "@/lib/auth-client";
 
 export default async function Home() {
-  const { headers } = await import("next/headers");
-  let session = null;
-  try {
-    session = await authClient.getSession({
-      fetchOptions: {
-        headers: await headers(),
-      },
-    });
-  } catch (error) {
-    console.error("Backend is unreachable or session fetch failed:", error);
-  }
+ 
 
 
   return (
