@@ -16,16 +16,14 @@ import {
 import React from "react";
 
 export default function DashboardLayout({
-  admin ,
-  user
+  admin 
 }: {
   children: React.ReactNode;
   admin:React.ReactNode;
-  user:React.ReactNode
 }) {
 
 const userInfo = {
-  role : "user"}
+  role : "admin"}
 
 
   return (
@@ -51,7 +49,6 @@ const userInfo = {
           </Breadcrumb>
         </header>
         <div className="flex flex-1 flex-col gap-4 p-4">{admin}
-          {user}
         </div>
       </SidebarInset>
     </SidebarProvider>
